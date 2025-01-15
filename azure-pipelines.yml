@@ -19,7 +19,7 @@ stages:
     - task: Docker@2
       inputs:
         containerRegistry: 'murat-study-dockerhub'
-        repository: 'currency-exchange-devops'
+        repository: 'murataydinstudy/currency-exchange-devops'
         command: 'buildAndPush'
         Dockerfile: '**/Dockerfile'
         tags: '$(tag)'
